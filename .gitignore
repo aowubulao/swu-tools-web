@@ -19,3 +19,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+*.iml
+package-lock.json
+vue.config.js
+target
