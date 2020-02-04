@@ -1,19 +1,23 @@
-# swu-tools-web
+# 西南大学助手
 
-## Project setup
-```
-npm install
-```
+线上地址：[https://swu.neoniou.com/](https://swu.neoniou.com/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+项目后端地址：[https://github.com/aowubulao/swu-tools-backend](https://github.com/aowubulao/swu-tools-backend)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+通过学号和密码在非校园网的环境下，提供查询成绩等功能。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+该工具不会将学号密码存储在数据库，所有请求都是一次性的，提供安全的使用环境
+
+
+### 项目施工中
+
+------
+
+预期功能：
+
+- [x] 成绩查询
+- [ ] 课表查询输出
+
+- [ ] 水电费查询
+- [ ] 空闲教室查询
+
