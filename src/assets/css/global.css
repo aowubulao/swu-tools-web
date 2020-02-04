@@ -1,0 +1,27 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+
+a, a:link, a:visited, a:focus{
+    text-decoration:none;
+    color: #fc5185;
+    position:relative;
+}
+a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background: #fc5185;
+    transition: all 0.2s ease-in-out;
+    transform: scale3d(0,1,1);
+    transform-origin: 50% 0;
+}
+a:hover::after{
+    transform:scale3d(1,1,1);
+}
