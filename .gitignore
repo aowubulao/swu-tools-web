@@ -22,5 +22,4 @@ yarn-error.log*
 
 *.iml
 package-lock.json
-vue.config.js
 target
