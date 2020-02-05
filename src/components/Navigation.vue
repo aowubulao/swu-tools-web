@@ -2,7 +2,7 @@
     <div id="inspire">
         <v-navigation-drawer v-model="drawer" app width="280">
             <v-hover v-slot:default="{ hover }">
-                <v-responsive class="nav-back" :height="hover ? 350 : 300">
+                <v-responsive class="nav-back" :height="hover ? 330 : 280">
 
                     <v-avatar style="margin-left: 60px; margin-top: 40px" width="150" height="150">
                         <img src="../../src/assets/img/favicon.jpg" alt="favicon">
@@ -16,7 +16,7 @@
             <v-list dense>
                 <v-list-item link @click="goHome">
                     <v-list-item-action>
-                        <v-icon>mdi-home</v-icon>
+                        <v-icon>mdi-folder-home-outline</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
                         <v-list-item-title>首页</v-list-item-title>
@@ -24,10 +24,18 @@
                 </v-list-item>
                 <v-list-item link @click="goGrades">
                     <v-list-item-action>
-                        <v-icon>mdi-contact-mail</v-icon>
+                        <v-icon>mdi-format-list-checks</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
                         <v-list-item-title>成绩查询</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item link @click="goCourses">
+                    <v-list-item-action>
+                        <v-icon>mdi-clipboard-list</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                        <v-list-item-title>课表查询</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
@@ -67,12 +75,20 @@
                     this.$router.push('/grades');
                 }
             },
+            goCourses () {
+                if (this.$route.path !== ('/courses')) {
+                    this.$router.push('/courses');
+                }
+            },
             changeTitle () {
                 if (this.$route.path === ('/')) {
                     this.title = '首页';
                 }
                 if (this.$route.path === ('/grades')) {
                     this.title = '成绩查询';
+                }
+                if (this.$route.path === ('/courses')) {
+                    this.title = '课表查询';
                 }
             }
         }
@@ -104,7 +120,7 @@
     .nav-back-words {
         font-size: 26px;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 60px;
         color: white;
         letter-spacing: 1px;
     }

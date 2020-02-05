@@ -7,6 +7,13 @@
           <hr style="margin-top: 10px; margin-bottom: 14px">
           <div style="font-size: 16px; font-weight: 500; letter-spacing: 1px">
             欢迎使用<span style="color: #188FFF; font-weight: 600">西南大学助手</span>！<br><br>
+            github地址:
+            <a
+                    href="https://github.com/aowubulao/swu-tools-web/"
+                    style="color: #188FFF; margin-left: 10px" target="_blank">
+              aowubulao/swu-tools-web/
+            </a>
+            <br><br>
             该应用提供教务系统信息查询等功能。<br><br>
             所有查询都是<span style="color: #188FFF; font-weight: 600">一次性</span>的，不会将信息存入数据库保存，请放心使用。
           </div>

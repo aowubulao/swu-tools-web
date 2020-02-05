@@ -2,7 +2,11 @@
     <div>
         <v-container>
             <v-content>
-                <v-col xl="6" md="6" sm="12" xs="12" style="float: left">
+                <v-col xl="5" md="5" sm="11" xs="11" style="float: left">
+                    <div
+                            style="font-size: 24px; font-weight: 500; letter-spacing: 1px; margin-top: 14px; margin-bottom: 14px">
+                        输入信息
+                    </div>
                     <v-form ref="form" v-model="valid" lazy-validation style="width: 300px">
                         <v-text-field :counter="15" v-model="username" :rules="usernameRules" label="学号" required/>
 
@@ -21,7 +25,7 @@
                     </transition>
 
                 </v-col>
-                <v-col xl="6" md="6" sm="12" xs="12" style="float: left">
+                <v-col xl="5" md="5" sm="11" xs="11" style="float: left">
                     <GradeCard :grades="grades"/>
                 </v-col>
             </v-content>
@@ -52,6 +56,7 @@
             xnm: '2019',
             xqm: '1',
             grades: '',
+            //grades: [{"cj":"68","jd":"1.80","kcmc":"固体物理","xf":"3.0"},{"cj":"69","jd":"2.00","kcmc":"薄膜材料与技术","xf":"2.5"},{"cj":"72","jd":"2.30","kcmc":"材料表面工程","xf":"3.0"},{"cj":"85","jd":"3.60","kcmc":"材料制备新技术","xf":"2.5"},{"cj":"68","jd":"1.80","kcmc":"粉体工程","xf":"3.0"},{"cj":"83","jd":"3.30","kcmc":"计算机在材料科学中的应用","xf":"2.5"},{"cj":"62","jd":"1.20","kcmc":"金属材料学","xf":"2.5"},{"cj":"71","jd":"2.00","kcmc":"陶瓷工艺学","xf":"3.0"},{"cj":"95","jd":"4.60","kcmc":"专业英语","xf":"2.0"},{"cj":"67","jd":"1.80","kcmc":"材料结构缺陷与性能","xf":"2.5"},{"cj":"83","jd":"3.30","kcmc":"大学生职业发展与就业指导B","xf":"0.5"}],
             isLoading: false,
             isError: false,
             errorMessage: '',

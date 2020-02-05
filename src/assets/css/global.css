@@ -8,8 +8,8 @@
 
 a, a:link, a:visited, a:focus{
     text-decoration:none;
-    color: #fc5185;
-    position:relative;
+    color: #188FFF;
+    position: absolute;
 }
 a::after {
     content: '';
@@ -17,7 +17,7 @@ a::after {
     width: 100%;
     height: 1px;
     position: absolute;
-    background: #fc5185;
+    background: #188FFF;
     transition: all 0.2s ease-in-out;
     transform: scale3d(0,1,1);
     transform-origin: 50% 0;
