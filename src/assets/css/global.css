@@ -1,3 +1,11 @@
+html {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+html::-webkit-scrollbar{
+    width: 0px;
+}
+
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;
 }

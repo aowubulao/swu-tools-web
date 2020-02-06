@@ -30,6 +30,14 @@
                         <v-list-item-title>成绩查询</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+                <v-list-item link @click="goUtility">
+                    <v-list-item-action>
+                        <v-icon>mdi-solar-power</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                        <v-list-item-title>水电查询</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
                 <v-list-item link @click="goCourses">
                     <v-list-item-action>
                         <v-icon>mdi-clipboard-list</v-icon>
@@ -43,7 +51,7 @@
 
         <v-app-bar app color="#1976D2" dark>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-            <v-toolbar-title>{{title}}</v-toolbar-title>
+            <v-toolbar-title class="font-weight-bold">{{title}}</v-toolbar-title>
             <v-spacer/>
         </v-app-bar>
 
@@ -80,6 +88,11 @@
                     this.$router.push('/courses');
                 }
             },
+            goUtility () {
+                if (this.$route.path !== ('/utility')) {
+                    this.$router.push('/utility');
+                }
+            },
             changeTitle () {
                 if (this.$route.path === ('/')) {
                     this.title = '首页';
@@ -89,6 +102,9 @@
                 }
                 if (this.$route.path === ('/courses')) {
                     this.title = '课表查询';
+                }
+                if (this.$route.path === ('/utility')) {
+                    this.title = '水电查询';
                 }
             }
         }

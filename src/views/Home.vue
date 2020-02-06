@@ -23,8 +23,8 @@
           <div style="font-size: 16px; font-weight: 500; letter-spacing: 1px">
             <ul>
               <li style="margin-top: 2px">成绩查询</li>
+              <li style="margin-top: 2px">水电费余额查询</li>
               <li style="margin-top: 2px">课表查询输出</li>
-              <li style="margin-top: 2px">空闲教室查询</li>
             </ul>
           </div>
         </v-col>

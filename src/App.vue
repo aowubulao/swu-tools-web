@@ -6,6 +6,7 @@
       <transition name="slide-fade" mode="out-in">
         <router-view/>
       </transition>
+      <Footer/>
     </div>
   </v-app>
 </template>
@@ -13,12 +14,14 @@
 <script>
   import ScrollToTop from "./components/ScrollToTop";
   import Navigation from "./components/Navigation";
+  import Footer from "./components/Footer"
 
   export default {
     name: 'app',
     components: {
       Navigation,
-      ScrollToTop
+      ScrollToTop,
+      Footer
     },
     data () {
       return {

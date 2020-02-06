@@ -4,7 +4,7 @@
         <hr style="margin-top: 10px; margin-bottom: 14px">
         <div v-for="grade in grades" :key="grade">
             <v-hover v-slot="{ hover }">
-                <v-card class="mx-auto grades-card" :elevation="hover ? 4 : 2">
+                <v-card class="mx-auto grades-card" :elevation="hover ? 12 : 2">
                     <v-container>
                         <div style="margin-top: 2px">
                             <span style="margin-right: 3px">课程名称:</span>
@@ -26,6 +26,7 @@
                 </v-card>
             </v-hover>
         </div>
+        <br><br><br>
     </div>
 </template>
 
