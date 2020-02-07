@@ -55,6 +55,10 @@
             <v-spacer/>
         </v-app-bar>
 
+        <v-btn absolute dark fab right bottom width="45px" height="45px"
+               color="#fc5185" style="margin-bottom: 100px; position: fixed; z-index: 9999" @click="drawer = !drawer">
+            <v-icon>mdi-menu</v-icon>
+        </v-btn>
     </div>
 </template>
 

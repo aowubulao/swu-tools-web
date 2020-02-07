@@ -1,8 +1,9 @@
 <template>
     <div>
         <v-fab-transition>
-            <v-btn absolute dark fab right bottom v-show="!hidden"
-                   color="#fc5185" style="margin-bottom:100px;position: fixed; z-index: 9999" @click="scrollToTop">
+            <v-btn absolute dark fab right bottom width="45px" height="45px"
+                   v-show="!hidden"
+                   color="#fc5185" style="margin-bottom: 155px; position: fixed; z-index: 9999" @click="scrollToTop">
                 <v-icon>mdi-arrow-up</v-icon>
             </v-btn>
         </v-fab-transition>
