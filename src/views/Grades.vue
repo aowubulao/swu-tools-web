@@ -120,7 +120,6 @@
             },
             saveGrades () {
                 localStorage.setItem('grades', JSON.stringify(this.grades));
-                console.log();
             },
             loadGrades () {
                 if (localStorage.getItem('grades') !== null && localStorage.getItem('grades') !== '') {
