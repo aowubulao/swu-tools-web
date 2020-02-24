@@ -51,7 +51,7 @@
                                 <tr v-for="item in courses" :key="item">
                                     <td>{{ item.xqj }}</td>
                                     <td>{{ item.jcs }}</td>
-                                    <td>{{ item.kcmc }}</td>
+                                    <td>{{ item.kcmc }}@{{ item.xm }}</td>
                                     <td>{{ item.cdmc }}</td>
                                     <td>{{ item.zcd }}</td>
                                 </tr>
