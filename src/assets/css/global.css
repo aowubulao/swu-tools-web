@@ -13,7 +13,6 @@ html::-webkit-scrollbar{
     opacity: 0;
 }
 
-
 a, a:link, a:visited, a:focus{
     text-decoration:none;
     color: #188FFF;
