@@ -109,7 +109,7 @@
             getCourses: async function () {
                 this.isLoading = true;
                 const axios = require('axios');
-                let ret = await axios.get("https://api.neoniou.com/swu/info/courses?username=" + this.username +
+                let ret = await axios.get("/swu/info/courses?username=" + this.username +
                     "&password=" + this.password +
                     "&xnm=" + this.xnm +
                     "&xqm=" + this.xqm

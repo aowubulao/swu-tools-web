@@ -101,7 +101,7 @@
             getGrades: async function () {
                 this.isLoading = true;
                 const axios = require('axios');
-                let ret = await axios.get("https://api.neoniou.com/swu/info/grades?username=" + this.username +
+                let ret = await axios.get("/swu/info/grades?username=" + this.username +
                     "&password=" + this.password +
                     "&xnm=" + this.xnm +
                     "&xqm=" + this.xqm

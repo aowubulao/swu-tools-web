@@ -124,7 +124,7 @@
             getUtility: async function () {
                 this.isLoading = true;
                 const axios = require('axios');
-                let ret = await axios.get("https://api.neoniou.com/swu/info/utility?buildId=" + this.build.id +
+                let ret = await axios.get("/swu/info/utility?buildId=" + this.build.id +
                     "&roomCode=" + this.roomCode
                 ).then(ret => {
                     this.isLoading = false;
